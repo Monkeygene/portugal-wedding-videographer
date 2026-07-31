@@ -2,12 +2,348 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portugal Wedding Videographers | Katy & Eugene</title>
-    <link rel="canonical" href="https://portugalweddingvideographer.com/blog/" />
+    <link rel="canonical" href="https://portugalweddingvideographer.com/portfolio/" />
   </head>
   <body>
+    <header class="h-24 w-full bg-white">
+      <nav class="mx-auto flex h-full max-w-7xl items-center justify-between px-6">
+        <!-- Desktop Logo -->
+        <a href="/" aria-label="Portugal Wedding Videographer" class="hidden md:block">
+          <img
+            src="/images/logo/portugal-wedding-videographer-logo.svg"
+            alt="Portugal Wedding Videographer Logo"
+            class="h-10 w-auto"
+          />
+        </a>
+        <!-- Mobile Logo -->
+        <a href="/" aria-label="Portugal Wedding Videographer" class="block md:hidden">
+          <img
+            src="/images/logo/portugal-wedding-videographer-mobile-logo.svg"
+            alt="Portugal Wedding Videographer Logo"
+            class="h-16 w-auto"
+          />
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="hidden items-center gap-8 text-sm md:flex">
+          <li>
+            <a href="/portfolio/" class="transition hover:opacity-70">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="/packages/" class="transition hover:opacity-70">Services</a>
+          </li>
+
+          <li>
+            <a href="/blog/" class="transition hover:opacity-70">Blog</a>
+          </li>
+
+          <li>
+            <a href="/about/" class="transition hover:opacity-70">About</a>
+          </li>
+
+          <li>
+            <a href="/contact/" class="transition hover:opacity-70"> Contact </a>
+          </li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" aria-label="Open Mobile Menu" class="md:hidden">
+          <img
+            id="hamburger-icon"
+            src="/images/navbar/hamburger-closed.svg"
+            alt="Mobile Menu"
+            class="h-8 w-8 transition-opacity duration-300"
+          />
+        </button>
+        <!-- Dark Overlay -->
+
+        <div id="mobile-overlay" class="fixed inset-0 z-40 hidden bg-black/30 transition-opacity duration-500"></div>
+
+        <!-- Mobile Navigation -->
+
+        <div
+          id="mobile-menu"
+          class="fixed right-0 top-0 z-50 h-screen w-2/3 translate-x-full bg-white shadow-xl transition-transform duration-200 md:hidden"
+        >
+          <div class="flex justify-end p-6">
+            <button id="mobile-menu-close" aria-label="Close Mobile Menu">
+              <img src="/images/navbar/hamburger-open.svg" alt="Close Menu" class="h-8 w-8" />
+            </button>
+          </div>
+
+          <ul class="text-center flex flex-col gap-10 px-10 pt-10 text-xl">
+            <li><a href="/portfolio/">Portfolio</a></li>
+
+            <li><a href="/packages/">Services</a></li>
+
+            <li><a href="/blog/">Blog</a></li>
+
+            <li><a href="/about/">About</a></li>
+
+            <li>
+              <a href="/contact/" class="transition hover:opacity-70"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="max-w-3xl mx-auto py-12">
+        <div class="text-center">
+          <h1 class="font-bold text-4xl pb-8">Our Portfolio of Wedding Videos</h1>
+          <p class="mb-8 leading-8">Have a look at a selection of our wedding videos below</p>
+        </div>
+      </section>
+      <section class="mx-auto max-w-5xl px-6 py-24">
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <iframe
+            class="aspect-video w-full"
+            src="https://www.youtube.com/embed/pdAvvM44jOY?si=M12IOgXrDFmStqvp"
+            title="Hannelie & Rohan Wedding Film"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <h3 class="mt-6 text-center text-2xl">Hannelie &amp; Rohan</h3>
+      </section>
+      <section class="mx-auto max-w-5xl px-6 py-24">
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <iframe
+            class="aspect-video w-full"
+            src="https://www.youtube.com/embed/B5yimQiKFS0?si=IA2jQcVgOFWqtvqU"
+            title="Bex & Tom Wedding Film"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <h3 class="mt-6 text-center text-2xl">Bex &amp; Tom</h3>
+      </section>
+      <section class="mx-auto max-w-7xl px-6 py-24">
+        <!-- Gallery -->
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Image One -->
+          <article class="overflow-hidden">
+            <img
+              src="/images/portfolio/portugal-wedding-videographer-couple-676x380.jpg"
+              alt="Wedding singer performing during a Portugal wedding"
+              class="h-80 w-full object-cover transition duration-500 hover:scale-105"
+            />
+          </article>
+
+          <!-- Image Two -->
+          <article class="overflow-hidden">
+            <img
+              src="/images/portfolio/portugal-wedding-videographer-cake-676x380.jpeg"
+              alt="Guests celebrating during a Portugal wedding"
+              class="h-80 w-full object-cover transition duration-500 hover:scale-105"
+            />
+          </article>
+
+          <!-- Image Three -->
+          <article class="overflow-hidden">
+            <img
+              src="/images/portfolio/portugal-wedding-videographer-ceremony-676x380.jpg"
+              alt="A beloved family dog captured during a Portugal wedding"
+              class="h-80 w-full object-cover transition duration-500 hover:scale-105"
+            />
+          </article>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-7xl px-6 py-24">
+        <!-- Gallery -->
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Image One -->
+          <article class="overflow-hidden">
+            <img
+              src="/images/portfolio/portugal-wedding-videographer-entrance-676x380.jpg"
+              alt="Wedding singer performing during a Portugal wedding"
+              class="h-80 w-full object-cover transition duration-500 hover:scale-105"
+            />
+          </article>
+
+          <!-- Image Two -->
+          <article class="overflow-hidden">
+            <img
+              src="/images/portfolio/portugal-wedding-videographer-field-676x380.jpg"
+              alt="Guests celebrating during a Portugal wedding"
+              class="h-80 w-full object-cover transition duration-500 hover:scale-105"
+            />
+          </article>
+
+          <!-- Image Three -->
+          <article class="overflow-hidden">
+            <img
+              src="/images/portfolio/portugal-wedding-videographer-table-setting-candles-676x380.jpg"
+              alt="A beloved family dog captured during a Portugal wedding"
+              class="h-80 w-full object-cover transition duration-500 hover:scale-105"
+            />
+          </article>
+        </div>
+        <h3 class="mt-6 text-center text-2xl">Isla &amp; Henry (Will upload soon)</h3>
+      </section>
+      <section class="max-w-3xl mx-auto py-12">
+        <div class="text-center">
+          <h2 class="font-bold text-4xl pb-8">Contact</h2>
+          <p class="mb-8 leading-8">If you’re interest in working together please contact us here,</p>
+          <p>If our approach feels right for your wedding, let’s chat.</p>
+          <a
+            href="mailto:katy@munjiri.com"
+            class="underline hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-2"
+          >
+            katy@munjiri.com
+          </a>
+          <p>
+            You can have a look our other video work
+            <a
+              href="https://www.munjiri.com/portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-2"
+            >
+              here </a
+            >.
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="max-w-5xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <!-- Column 1: Logo + Location -->
+          <div>
+            <a href="/" class="inline-block pl-6 mb-2">
+              <img
+                src="/images/logo/portugal-wedding-videographer-mobile-logo.svg"
+                alt="PWV Logo"
+                class="h-20 object-contain"
+              />
+            </a>
+
+            <p class="text-sm leading-relaxed">
+              The most beautiful moments are often the quitest ones. Our passion is capture the real, authentic moments
+              to create a timeless cinematic wedding video.
+            </p>
+          </div>
+
+          <!-- Column 2: Services -->
+          <div class="pl:0 md:pl-14 text-center md:text-left">
+            <h3 class="font-semibold text-lg mb-4">Services</h3>
+
+            <nav class="flex text-sm flex-col gap-2">
+              <a
+                href="/"
+                class="hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-1"
+                >Home</a
+              >
+              <a
+                href="/packages/"
+                class="hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-1"
+                >Packages</a
+              >
+
+              <a
+                href="/portfolio/"
+                class="hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-1"
+                >Portfolio</a
+              >
+              <a
+                href="/blog/"
+                class="hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-1"
+                >Blog</a
+              >
+              <a
+                href="/about/"
+                class="hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-1"
+                >About</a
+              >
+              <a
+                href="/contact/"
+                class="hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-1"
+                >Contact</a
+              >
+            </nav>
+          </div>
+
+          <!-- Column 3: Newsletter -->
+          <div>
+            <h3 class="font-semibold text-lg mb-4">Join Our Newsletter</h3>
+
+            <p class="text-sm mb-4">Stay up to date with our latest work, and keep planning!</p>
+
+            <form action="#" method="post" class="flex flex-col gap-3">
+              <input
+                type="email"
+                name="email_address"
+                placeholder="Your email address"
+                required
+                class="border border-zinc-300 px-2 py-2 rounded-md text-sm"
+              />
+
+              <button
+                type="submit"
+                class="w-fit px-3 py-1.5 text-sm border border-black bg-white hover:bg-black hover:text-white transition-colors"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom Footer -->
+      <div class="bg-white border-t border-gray-200">
+        <div
+          class="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex flex-col-reverse md:flex-row items-center justify-between text-xs md:text-sm text-gray-600 space-y-4 md:space-y-0"
+        >
+          <!-- Copyright -->
+          <div class="text-center md:text-left">
+            © 2026 Portugal Wedding Videographer. All Rights Reserved.
+            <span class="hidden md:inline"> </span>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="flex space-x-6 justify-center md:justify-end pb-6 md:pb-0">
+            <a
+              href="#"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="Instagram"
+              class="hover:opacity-50 transition"
+            >
+              <img src="/images/logo/instagram.svg" alt="Instagram" class="w-5 h-5" />
+            </a>
+
+            <a
+              href="#"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="Pinterest"
+              class="hover:opacity-50 transition"
+            >
+              <img src="/images/logo/pinterest.svg" alt="Pinterest" class="w-5 h-5" />
+            </a>
+
+            <a
+              href="#"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="YouTube"
+              class="hover:opacity-50 transition"
+            >
+              <img src="/images/logo/youtube.svg" alt="YouTube" class="w-5 h-5" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
