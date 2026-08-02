@@ -45,6 +45,7 @@
   }
 
   h2 {
+    @apply font-bold text-xl;
   }
 
   h3 {

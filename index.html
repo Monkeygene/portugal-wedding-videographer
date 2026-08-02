@@ -10,25 +10,40 @@
     />
     <link rel="canonical" href="https://portugalweddingvideographer.com/" />
     <link rel="icon" href="/images/logo/pwv.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/logo/pwv.png" />
+    <style>
+      .film-grain {
+        opacity: 0.045;
+        background-image: radial-gradient(circle, rgba(255, 255, 255, 0.35) 1px, transparent 1px);
+        background-size: 5px 5px;
+        animation: grain 0.35s steps(2) infinite;
+      }
+
+      @keyframes grain {
+        0% {
+          transform: translate(0, 0);
+        }
+        25% {
+          transform: translate(-2px, 2px);
+        }
+        50% {
+          transform: translate(2px, -2px);
+        }
+        75% {
+          transform: translate(-1px, -1px);
+        }
+        100% {
+          transform: translate(1px, 2px);
+        }
+      }
+    </style>
   </head>
   <body>
     <header class="h-24 w-full bg-white">
       <nav class="mx-auto flex h-full max-w-7xl items-center justify-between px-6">
         <!-- Desktop Logo -->
-        <a href="/" aria-label="Portugal Wedding Videographer" class="hidden md:block">
-          <img
-            src="/images/logo/portugal-wedding-videographer-logo.svg"
-            alt="Portugal Wedding Videographer Logo"
-            class="h-10 w-auto"
-          />
-        </a>
-        <!-- Mobile Logo -->
-        <a href="/" aria-label="Portugal Wedding Videographer" class="block md:hidden">
-          <img
-            src="/images/logo/portugal-wedding-videographer-mobile-logo.svg"
-            alt="Portugal Wedding Videographer Logo"
-            class="h-16 w-auto"
-          />
+        <a href="/" aria-label="Portugal Wedding Videographer" class="md:block">
+          <img src="/images/logo/wedding-dance.png" alt="Portugal Wedding Videographer Logo" class="h-16 w-auto" />
         </a>
 
         <!-- Desktop Navigation -->
@@ -39,10 +54,6 @@
 
           <li>
             <a href="/packages/" class="transition hover:opacity-70">Packages</a>
-          </li>
-
-          <li>
-            <a href="/blog/" class="transition hover:opacity-70">Blog</a>
           </li>
 
           <li>
@@ -84,8 +95,6 @@
 
             <li><a href="/packages/">Packages</a></li>
 
-            <li><a href="/blog/">Blog</a></li>
-
             <li><a href="/about/">About</a></li>
 
             <li>
@@ -95,13 +104,63 @@
         </div>
       </nav>
     </header>
-    <main class="px-4 md:px-0">
-      <section class="max-w-3xl mx-auto py-12">
-        <div class="text-center">
-          <h1>Portugal Wedding Videographer</h1>
-          <p class="mb-8">
-            Hi! We're Katy and Eugene, your Portugal wedding videographer team. Your wedding day will move quickly! We
+
+    <section class="relative h-[calc(100vh-80px)] w-full overflow-hidden bg-black">
+      <!-- Hero Video -->
+      <video
+        id="heroVideo"
+        class="absolute inset-0 h-full w-full object-cover"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster="/images/video-thumbnail/private-kruger-safari-thumbnail.webp"
+        aria-label="Portugal wedding videographer capturing a romantic wedding in Portugal."
+      >
+        <!-- Mobile -->
+        <source media="(max-width: 767px)" src="/videos/home-page/pwv-header-mobile.mp4" type="video/mp4" />
+
+        <!-- Desktop -->
+        <source media="(min-width: 768px)" src="/videos/home-page/pwv-header.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Dark Overlay -->
+      <div class="absolute inset-0 bg-black/20"></div>
+
+      <!-- Soft Gradient -->
+      <div class="absolute inset-0 bg-linear-to-b from-black/15 via-transparent to-black/35"></div>
+
+      <!-- Film Grain -->
+      <div class="film-grain absolute inset-0 pointer-events-none"></div>
+
+      <!-- Content -->
+      <div class="relative z-10 flex h-full items-center justify-center">
+        <div class="max-w-5xl px-6 text-center text-white">
+          <h1 class="text-3xl md:text-4xl">Portugal Wedding Videographer</h1>
+
+          <p class="mx-auto max-w-2xl py-3 text-lg md:py-5 md:text-xl">
+            Hi! We're Katy and Eugene, your Portugal wedding videographer team. Your wedding day will move quickly. We
             help you slow it down and remember the moments that mattered most.
+          </p>
+        </div>
+      </div>
+    </section>
+    <main class="px-4 md:px-0">
+      <section class="py-12 md:py-44 max-w-3xl mx-auto">
+        <div class="text-center">
+          <p class="mb-8 leading-8 md:leading-12">
+            Your wedding will go by faster than you ever imagined. While you're soaking up all the hugs, laughs and
+            happy tears, we'll quietly capture the moments you missed, the emotions and the voices you'll never want to
+            forget. We're Katy and Eugene, a videography team creating natural wedding films across Portugal for couples
+            who want to be fully present, not performing for the camera.
+          </p>
+          <p>
+            <a
+              href="/packages/"
+              class="underline hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-2"
+              >Start Your Wedding Film</a
+            >
           </p>
         </div>
       </section>
@@ -131,23 +190,7 @@
           </div>
         </div>
       </section>
-      <section class="py-12 max-w-3xl mx-auto">
-        <div class="text-center">
-          <p class="mb-8 leading-12">
-            Your wedding will go by faster than you ever imagined. While you're soaking up all the hugs, laughs and
-            happy tears, we'll quietly capture the moments you missed, the emotions and the voices you'll never want to
-            forget. We're Katy and Eugene, a videography team creating natural wedding films across Portugal for couples
-            who want to be fully present, not performing for the camera.
-          </p>
-          <p>
-            <a
-              href="/packages/"
-              class="underline hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-2"
-              >Start Your Wedding Film</a
-            >
-          </p>
-        </div>
-      </section>
+
       <section class="py-12 px-4">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-8 items-start md:items-center">
           <!-- Left: Portrait -->
@@ -183,7 +226,7 @@
       </section>
       <section class="max-w-3xl mx-auto py-8">
         <div class="text-center space-y-6">
-          <h2 class="font-bold text-xl">The day you've spent months planning will feel like a bit of a blur</h2>
+          <h2>The day you've spent months planning will feel like a bit of a blur</h2>
           <p>Everyone says the same thing after their wedding:</p>
           <p>"It went by so quickly."</p>
           <p>One moment you're getting ready.</p>
@@ -220,7 +263,7 @@
       </section>
       <section class="max-w-3xl mx-auto py-8">
         <div class="text-center space-y-6">
-          <h2 class="font-bold text-xl">Why having a Portugal wedding videographer makes a difference</h2>
+          <h2>Why having a Portugal wedding videographer makes a difference</h2>
           <p>Photographs capture what your wedding looked like.</p>
           <p>Film lets you experience it again.</p>
           <p>Hear your vows.</p>
@@ -273,7 +316,7 @@
       <section class="mx-auto max-w-7xl text-center px-6 py-24">
         <!-- Heading -->
         <div class="mb-16">
-          <h2 class="mb-4 font-bold text-2xl">Wedding videographer cost Portugal</h2>
+          <h2 class="mb-8">Wedding videographer cost Portugal</h2>
         </div>
 
         <!-- Cards -->
