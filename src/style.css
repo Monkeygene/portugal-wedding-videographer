@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --color-background: #fffcfa;
+}
+
 @font-face {
   font-family: "Crimson Text";
   src: url("/fonts/CrimsonText-Regular.woff2") format("woff2");

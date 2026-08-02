@@ -38,7 +38,7 @@
       }
     </style>
   </head>
-  <body>
+  <body class="bg-background">
     <header class="h-24 w-full bg-white">
       <nav class="mx-auto flex h-full max-w-7xl items-center justify-between px-6">
         <!-- Desktop Logo -->
@@ -115,14 +115,10 @@
         loop
         playsinline
         preload="metadata"
-        poster="/images/video-thumbnail/private-kruger-safari-thumbnail.webp"
+        poster="/images/video-thumbnail/pwv-header.webp"
         aria-label="Portugal wedding videographer capturing a romantic wedding in Portugal."
       >
-        <!-- Mobile -->
-        <source media="(max-width: 767px)" src="/videos/home-page/pwv-header-mobile.mp4" type="video/mp4" />
-
-        <!-- Desktop -->
-        <source media="(min-width: 768px)" src="/videos/home-page/pwv-header.mp4" type="video/mp4" />
+        <source src="/videos/home-page/pwv-header.mp4" type="video/mp4" />
       </video>
 
       <!-- Dark Overlay -->
@@ -162,32 +158,6 @@
               >Start Your Wedding Film</a
             >
           </p>
-        </div>
-      </section>
-      <section class="py-12 px-4">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-8 items-start md:items-center">
-          <!-- Left: Portrait Video -->
-          <div class="md:w-6/12">
-            <video class="lazy-video w-full h-auto object-cover" muted loop playsinline autoplay preload="none">
-              <source src="/videos/home-page/isla-henry-confetti-walk.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-
-          <!-- Right: Landscape -->
-          <div class="md:w-5/12">
-            <picture>
-              <img
-                src="/images/homepage/portugal-wedding-videographer-church-958x539.jpg"
-                width="672"
-                height="449"
-                loading="lazy"
-                decoding="async"
-                alt=""
-                class="w-full h-auto object-cover"
-              />
-            </picture>
-          </div>
         </div>
       </section>
 
@@ -510,8 +480,30 @@
           </article>
         </div>
       </section>
-
-      <section class="max-w-3xl mx-auto py-8">
+      <section class="mx-auto max-w-7xl px-6 py-24">
+        <div class="mx-auto max-w-4xl text-center">
+          <div class="overflow-hidden rounded-2xl shadow-xl aspect-video">
+            <iframe
+              class="h-full w-full"
+              src="https://www.youtube-nocookie.com/embed/M9P9OyLPEkA"
+              title="Portugal Wedding Videographer"
+              loading="lazy"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-3xl mx-auto py-12 md:py-24">
         <div class="text-center space-y-6">
           <h2 class="text-xl font-bold">Book your wedding videographer in Portugal</h2>
           <p>
@@ -536,9 +528,9 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
           <!-- Column 1: Logo + Description -->
           <div>
-            <div class="flex justify-center mb-2">
+            <div class="flex justify-center py-0 md:py-8">
               <a href="/">
-                <img src="/images/logo/wedding-dance.png" alt="PWV Logo" class="h-48 md:h-28 object-contain" />
+                <img src="/images/meal/sardines.png" alt="PWV Logo" class="h-48 md:h-16 object-contain" />
               </a>
             </div>
 
@@ -569,11 +561,7 @@
                 class="hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-1 text-sm"
                 >Portfolio</a
               >
-              <a
-                href="/blog/"
-                class="hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-1 text-sm"
-                >Blog</a
-              >
+
               <a
                 href="/about/"
                 class="hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-1 text-sm"
