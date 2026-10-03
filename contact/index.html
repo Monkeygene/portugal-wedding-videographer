@@ -13,7 +13,7 @@
     <link rel="apple-touch-icon" href="/images/logo/pwv.png" />
   </head>
   <body>
-    <header class="h-24 w-full bg-white">
+    <header class="h-24 w-full">
       <nav class="mx-auto flex h-full max-w-7xl items-center justify-between px-6">
         <!-- Desktop Logo -->
         <a href="/" aria-label="Portugal Wedding Videographer" class="md:block">
@@ -30,6 +30,9 @@
             <a href="/packages/" class="transition hover:opacity-70">Packages</a>
           </li>
 
+          <li>
+            <a href="/blog/" class="transition hover:opacity-70">Blog</a>
+          </li>
           <li>
             <a href="/about/" class="transition hover:opacity-70">About</a>
           </li>
@@ -56,7 +59,7 @@
 
         <div
           id="mobile-menu"
-          class="fixed right-0 top-0 z-50 h-screen w-2/3 translate-x-full bg-white shadow-xl transition-transform duration-200 md:hidden"
+          class="fixed right-0 top-0 z-50 h-screen w-2/3 translate-x-full shadow-xl transition-transform duration-200 md:hidden"
         >
           <div class="flex justify-end p-6">
             <button id="mobile-menu-close" aria-label="Close Mobile Menu">
@@ -68,7 +71,7 @@
             <li><a href="/portfolio/">Portfolio</a></li>
 
             <li><a href="/packages/">Packages</a></li>
-
+            <li><a href="/blog/">Blog</a></li>
             <li><a href="/about/">About</a></li>
 
             <li>
@@ -122,9 +125,9 @@
           <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
             <!-- Column 1: Logo + Description -->
             <div>
-              <div class="flex justify-center py-0 md:py-4">
+              <div class="flex justify-center py-0 md:py-8">
                 <a href="/">
-                  <img src="/images/meal/waiters.png" alt="PWV Logo" class="h-48 md:h-24 object-contain" />
+                  <img src="/images/meal/sardines.png" alt="PWV Logo" class="h-48 md:h-16 object-contain" />
                 </a>
               </div>
 
@@ -155,7 +158,11 @@
                   class="hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-1 text-sm"
                   >Portfolio</a
                 >
-
+                <a
+                  href="/blog/"
+                  class="hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-1 text-sm"
+                  >Blog</a
+                >
                 <a
                   href="/about/"
                   class="hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-1 text-sm"

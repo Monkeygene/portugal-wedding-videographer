@@ -16,7 +16,9 @@ export default defineConfig({
         about: path.resolve(__dirname, "about/index.html"),
         contact: path.resolve(__dirname, "contact/index.html"),
         services: path.resolve(__dirname, "packages/index.html"),
+        // Portfolio
         portfolio: path.resolve(__dirname, "portfolio/index.html"),
+        islahenry: path.resolve(__dirname, "the-barn-at-upcote-wedding-video/index.html"),
       },
     },
   },

@@ -2,12 +2,271 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog | Katy & Eugene</title>
+    <meta name="description" content="Read our blogs" />
     <link rel="canonical" href="https://portugalweddingvideographer.com/blog/" />
+    <link rel="icon" href="/images/logo/pwv.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/logo/pwv.png" />
   </head>
   <body>
+    <header class="h-24 w-full">
+      <nav class="mx-auto flex h-full max-w-7xl items-center justify-between px-6">
+        <!-- Desktop Logo -->
+        <a href="/" aria-label="Portugal Wedding Videographer" class="md:block">
+          <img src="/images/logo/wedding-dance.png" alt="Portugal Wedding Videographer Logo" class="h-16 w-auto" />
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="hidden items-center gap-8 text-sm md:flex">
+          <li>
+            <a href="/portfolio/" class="transition hover:opacity-70">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="/packages/" class="transition hover:opacity-70">Packages</a>
+          </li>
+
+          <li>
+            <a href="/blog/" class="transition hover:opacity-70">Blog</a>
+          </li>
+          <li>
+            <a href="/about/" class="transition hover:opacity-70">About</a>
+          </li>
+
+          <li>
+            <a href="/contact/" class="transition hover:opacity-70"> Contact </a>
+          </li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" aria-label="Open Mobile Menu" class="md:hidden">
+          <img
+            id="hamburger-icon"
+            src="/images/navbar/hamburger-closed.svg"
+            alt="Mobile Menu"
+            class="h-8 w-8 transition-opacity duration-300"
+          />
+        </button>
+        <!-- Dark Overlay -->
+
+        <div id="mobile-overlay" class="fixed inset-0 z-40 hidden bg-black/30 transition-opacity duration-500"></div>
+
+        <!-- Mobile Navigation -->
+
+        <div
+          id="mobile-menu"
+          class="fixed right-0 top-0 z-50 h-screen w-2/3 translate-x-full shadow-xl transition-transform duration-200 md:hidden"
+        >
+          <div class="flex justify-end p-6">
+            <button id="mobile-menu-close" aria-label="Close Mobile Menu">
+              <img src="/images/navbar/hamburger-open.svg" alt="Close Menu" class="h-8 w-8" />
+            </button>
+          </div>
+
+          <ul class="text-center flex flex-col gap-10 px-10 pt-10 text-xl">
+            <li><a href="/portfolio/">Portfolio</a></li>
+
+            <li><a href="/packages/">Packages</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/about/">About</a></li>
+
+            <li>
+              <a href="/contact/" class="transition hover:opacity-70"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="pt-16">
+      <!-- Blog Header Section -->
+      <section class="px-6 py-16 text-black">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="font-bold mb-6">Blog</h1>
+        </div>
+      </section>
+
+      <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Card 1 -->
+            <a href="#" class="group block overflow-hidden">
+              <div class="overflow-hidden">
+                <img
+                  src="/images/blog-images/portugal-wedding-videographer-entrance-676x380.jpg"
+                  alt="Video Strategy"
+                  class="w-full aspect-video object-cover"
+                />
+              </div>
+
+              <div class="py-6">
+                <h3 class="text-center mb-3">How to Choose a Wedding Videographer</h3>
+              </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="/the-barn-at-upcote-wedding-video/" class="group block overflow-hidden">
+              <div class="overflow-hidden">
+                <img
+                  src="/images/blog-images/portugal-wedding-videographer-field-676x380.jpg"
+                  alt="Video Strategy"
+                  class="w-full aspect-video object-cover"
+                />
+              </div>
+
+              <div class="py-6">
+                <h3 class="text-center mb-3">Isla and Henry at The Barn at Upcote</h3>
+              </div>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="#" class="group block overflow-hidden">
+              <div class="overflow-hidden">
+                <img
+                  src="/images/blog-images/portugal-wedding-videographer-table-setting-candles-676x380.jpg"
+                  alt="Video Strategy"
+                  class="w-full aspect-video object-cover"
+                />
+              </div>
+
+              <div class="py-6">
+                <h3 class="font-semibold text-center mb-3">Field Notes</h3>
+
+                <p class="text-center">How Much Does a Wedding Videographer Cost</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer>
+        <div class="max-w-5xl mx-auto px-6 py-12">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <!-- Column 1: Logo + Description -->
+            <div>
+              <div class="flex justify-center py-0 md:py-8">
+                <a href="/">
+                  <img src="/images/meal/sardines.png" alt="PWV Logo" class="h-48 md:h-16 object-contain" />
+                </a>
+              </div>
+
+              <p class="text-base md:text-sm leading-relaxed text-center md:text-left">
+                Our relaxed documentary style means you can forget about the camera and simply enjoy being with your
+                favourite people, while we quietly capture the moments that matter.
+              </p>
+            </div>
+
+            <!-- Column 2: Services -->
+            <div class="pl:0 md:pl-14 text-center md:text-left">
+              <h3 class="font-semibold text-lg mb-4 mt-8">Services</h3>
+
+              <nav class="flex text-sm flex-col gap-2">
+                <a
+                  href="/"
+                  class="hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-1 text-sm"
+                  >Home</a
+                >
+                <a
+                  href="/packages/"
+                  class="hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-1 text-sm"
+                  >Packages</a
+                >
+
+                <a
+                  href="/portfolio/"
+                  class="hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-1 text-sm"
+                  >Portfolio</a
+                >
+                <a
+                  href="/blog/"
+                  class="hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-1 text-sm"
+                  >Blog</a
+                >
+                <a
+                  href="/about/"
+                  class="hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-1 text-sm"
+                  >About</a
+                >
+                <a
+                  href="/contact/"
+                  class="hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-1 text-sm"
+                  >Contact</a
+                >
+              </nav>
+            </div>
+
+            <!-- Column 3: Newsletter -->
+            <div class="text-center md:text-left">
+              <h3 class="font-semibold text-lg mb-4 mt-8">Join Our Newsletter</h3>
+
+              <p class="text-sm mb-4">Stay up to date with our latest work, and keep planning!</p>
+
+              <form action="#" method="post" class="flex flex-col gap-3">
+                <input
+                  type="email"
+                  name="email_address"
+                  placeholder="Your email address"
+                  required
+                  class="border border-zinc-300 px-2 py-2 rounded-md text-sm"
+                />
+
+                <button
+                  type="submit"
+                  class="self-center md:self-start w-fit px-3 py-1.5 text-sm border border-black bg-white hover:bg-black hover:text-white transition-colors cursor-pointer"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Footer -->
+        <div class="bg-white border-t border-gray-200">
+          <div
+            class="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex flex-col-reverse md:flex-row items-center justify-between text-xs md:text-sm text-gray-600 space-y-4 md:space-y-0"
+          >
+            <!-- Copyright -->
+            <div class="text-center md:text-left">
+              © 2026 Portugal Wedding Videographer. All Rights Reserved.
+              <span class="hidden md:inline"> </span>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="flex space-x-6 justify-center md:justify-end pb-6 md:pb-0">
+              <a
+                href="#"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="Instagram"
+                class="hover:opacity-50 transition"
+              >
+                <img src="/images/logo/instagram.svg" alt="Instagram" class="w-5 h-5" />
+              </a>
+
+              <a
+                href="#"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="Pinterest"
+                class="hover:opacity-50 transition"
+              >
+                <img src="/images/logo/pinterest.svg" alt="Pinterest" class="w-5 h-5" />
+              </a>
+
+              <a
+                href="https://www.youtube.com/@WeddingVideographerPortugal"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="YouTube"
+                class="hover:opacity-50 transition"
+              >
+                <img src="/images/logo/youtube.svg" alt="YouTube" class="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

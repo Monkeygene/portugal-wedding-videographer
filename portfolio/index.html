@@ -13,7 +13,7 @@
     <link rel="apple-touch-icon" href="/images/logo/pwv.png" />
   </head>
   <body>
-    <header class="h-24 w-full bg-white">
+    <header class="h-24 w-full">
       <nav class="mx-auto flex h-full max-w-7xl items-center justify-between px-6">
         <!-- Desktop Logo -->
         <a href="/" aria-label="Portugal Wedding Videographer" class="md:block">
@@ -30,6 +30,9 @@
             <a href="/packages/" class="transition hover:opacity-70">Packages</a>
           </li>
 
+          <li>
+            <a href="/blog/" class="transition hover:opacity-70">Blog</a>
+          </li>
           <li>
             <a href="/about/" class="transition hover:opacity-70">About</a>
           </li>
@@ -56,7 +59,7 @@
 
         <div
           id="mobile-menu"
-          class="fixed right-0 top-0 z-50 h-screen w-2/3 translate-x-full bg-white shadow-xl transition-transform duration-200 md:hidden"
+          class="fixed right-0 top-0 z-50 h-screen w-2/3 translate-x-full shadow-xl transition-transform duration-200 md:hidden"
         >
           <div class="flex justify-end p-6">
             <button id="mobile-menu-close" aria-label="Close Mobile Menu">
@@ -68,7 +71,7 @@
             <li><a href="/portfolio/">Portfolio</a></li>
 
             <li><a href="/packages/">Packages</a></li>
-
+            <li><a href="/blog/">Blog</a></li>
             <li><a href="/about/">About</a></li>
 
             <li>
@@ -113,75 +116,41 @@
 
         <h3 class="mt-6 text-center text-lg">Bex &amp; Tom</h3>
       </section>
-      <section class="mx-auto max-w-7xl px-6 pt-24 pb-8">
-        <!-- Gallery -->
-        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Image One -->
-          <article class="overflow-hidden">
-            <img
-              src="/images/portfolio/portugal-wedding-videographer-couple-676x380.jpg"
-              alt=""
-              class="aspect-video w-full object-cover transition duration-500 hover:scale-105"
-            />
-          </article>
 
-          <!-- Image Two -->
-          <article class="overflow-hidden">
-            <img
-              src="/images/portfolio/portugal-wedding-videographer-cake-676x380.jpeg"
-              alt=""
-              class="aspect-video w-full object-cover transition duration-500 hover:scale-105"
-            />
-          </article>
-
-          <!-- Image Three -->
-          <article class="overflow-hidden">
-            <img
-              src="/images/portfolio/portugal-wedding-videographer-ceremony-676x380.jpg"
-              alt="A beloved family dog captured during a Portugal wedding"
-              class="aspect-video w-full object-cover transition duration-500 hover:scale-105"
-            />
-          </article>
+      <section class="mx-auto max-w-5xl px-6 py-24">
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <iframe
+            class="aspect-video w-full"
+            src="https://www.youtube.com/embed/E7P5TqLS3ls?si=IA2jQcVgOFWqtvqU"
+            title="Bex & Tom Wedding Film"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
+
+        <h3 class="mt-6 text-center text-lg">
+          <a
+            href="/the-barn-at-upcote-wedding-video/"
+            class="underline hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-2"
+            >Isla &amp; Henry</a
+          >
+        </h3>
       </section>
 
-      <section class="mx-auto max-w-7xl px-6 pb-24">
-        <!-- Gallery -->
-        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Image One -->
-          <article class="overflow-hidden">
-            <img
-              src="/images/portfolio/portugal-wedding-videographer-entrance-676x380.jpg"
-              alt=""
-              class="aspect-video w-full object-cover transition duration-500 hover:scale-105"
-            />
-          </article>
-
-          <!-- Image Two -->
-          <article class="overflow-hidden">
-            <img
-              src="/images/portfolio/portugal-wedding-videographer-field-676x380.jpg"
-              alt=""
-              class="aspect-video w-full object-cover transition duration-500 hover:scale-105"
-            />
-          </article>
-
-          <!-- Image Three -->
-          <article class="overflow-hidden">
-            <img
-              src="/images/portfolio/portugal-wedding-videographer-table-setting-candles-676x380.jpg"
-              alt=""
-              class="aspect-video w-full object-cover transition duration-500 hover:scale-105"
-            />
-          </article>
-        </div>
-        <h3 class="mt-6 text-center text-lg">Isla &amp; Henry (Will upload soon)</h3>
-      </section>
       <section class="max-w-3xl mx-auto py-12">
         <div class="text-center">
           <h2 class="font-bold text-xl pb-8">Contact</h2>
           <p class="mb-6 leading-8">If you’re interest in working together please contact us here,</p>
-          <p class="mb-6">If our approach feels right for your wedding, let’s chat.</p>
+          <p class="mb-6">
+            If our approach feels right for your wedding,
+            <a
+              href="/contact/"
+              class="underline hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-2"
+              >let’s chat</a
+            >
+            .
+          </p>
           <a
             href="mailto:katy@munjiri.com"
             class="underline hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-2"
@@ -208,9 +177,9 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
           <!-- Column 1: Logo + Description -->
           <div>
-            <div class="flex justify-center py-0 md:py-4">
+            <div class="flex justify-center py-0 md:py-8">
               <a href="/">
-                <img src="/images/meal/pavlova.png" alt="PWV Logo" class="h-48 md:h-24 object-contain" />
+                <img src="/images/meal/sardines.png" alt="PWV Logo" class="h-48 md:h-16 object-contain" />
               </a>
             </div>
 
@@ -241,7 +210,11 @@
                 class="hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-1 text-sm"
                 >Portfolio</a
               >
-
+              <a
+                href="/blog/"
+                class="hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-1 text-sm"
+                >Blog</a
+              >
               <a
                 href="/about/"
                 class="hover:underline underline-offset-[3px] decoration-1 decoration-amber-500 hover:decoration-1 text-sm"
